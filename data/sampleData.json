@@ -1,0 +1,28 @@
+{
+  "name": "Connected Thinking Ltd",
+  "address": "Toronto, Canada",
+  "payling_role": "Software Developer",
+  "list": [
+    {
+      "format": "Test",
+      "match": "66",
+      "runs": "4454",
+      "hs": "217",
+      "avs": "39.07"
+    },
+    {
+      "format": "ODI",
+      "match": "239",
+      "runs": "7304",
+      "hs": "134",
+      "avs": "37.27"
+    },
+    {
+      "format": "T20I",
+      "match": "117",
+      "runs": "2382",
+      "hs": "84",
+      "avs": "23.82"
+    }
+  ]
+}
