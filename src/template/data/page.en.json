@@ -1,6 +1,7 @@
 {
   "headerLabel": "Toronto Tennis Team TESTING",
-  "sub-header": {
+  "subHeader": {
+    "headerLabel": "Player Details TEST",
     "nameLabel": "name",
     "addressLable": "Address",
     "roleLable": "Playing role"
