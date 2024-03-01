@@ -10,7 +10,7 @@ export const getJsonData = async (subDirectory, fileName) => {
     subDirectory,
     `${fileName}.json`
   );
-  console.log("dataFilePath", dataFilePath);
+  // console.log("dataFilePath", dataFilePath);
   const dataFile = await fs.readFile(dataFilePath, "utf-8");
   const data = JSON.parse(dataFile);
   // console.log("data", data);

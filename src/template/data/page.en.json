@@ -1,0 +1,20 @@
+{
+  "headerLabel": "Toronto Tennis Team TESTING",
+  "sub-header": {
+    "nameLabel": "name",
+    "addressLable": "Address",
+    "roleLable": "Playing role"
+  },
+  "summary": {
+    "header": "summary",
+    "table": {
+      "header": {
+        "format": "Format",
+        "match": "Match",
+        "runs": "Runs",
+        "hs": "HS",
+        "average": "Ave"
+      }
+    }
+  }
+}
