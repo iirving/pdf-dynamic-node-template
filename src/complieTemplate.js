@@ -18,6 +18,7 @@ export const compileTemplate = async function (templateName, dataDyanamic) {
   // console.log("compileTemplate", "staticContentData", staticContentData);
 
   const data = { ...staticContentData, ...dataDyanamic };
+  // console.log("compileTemplate", "data", data);
 
   const htmlFile = await fs.readFile(templateFilePath, "utf-8");
   return hbs.compile(htmlFile)(data);
