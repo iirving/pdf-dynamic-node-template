@@ -1,5 +1,5 @@
 // import { pdfGenerator } from "./src/pdfGenerator.js";
-import { generatePdf } from "./src/generatePdf.js";
+import generatePdf from "./src/generatePdf.js";
 
 // async function generatePdf() {
 const fileName = "Ians test file";

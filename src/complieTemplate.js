@@ -1,7 +1,7 @@
 import hbs from "handlebars";
 import fs from "fs-extra";
 import path from "path";
-import { getJsonData } from "./getJsonData.js";
+import getJsonData from "./getJsonData.js";
 
 export const compileTemplate = async function (templateName, dataDyanamic) {
   const templateFilePath = path.join(
@@ -23,3 +23,5 @@ export const compileTemplate = async function (templateName, dataDyanamic) {
   const htmlFile = await fs.readFile(templateFilePath, "utf-8");
   return hbs.compile(htmlFile)(data);
 };
+
+export { compileTemplate as default };

@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import { compileTemplate } from "./complieTemplate.js";
+import compileTemplate from "./complieTemplate.js";
 import path from "path";
 
 export const pdfGenerator = async function (fileName, data) {
@@ -27,3 +27,5 @@ export const pdfGenerator = async function (fileName, data) {
 
   await browser.close();
 };
+
+export { pdfGenerator as default };

@@ -16,3 +16,5 @@ export const getJsonData = async (subDirectory, fileName) => {
   // console.log("data", data);
   return data;
 };
+
+export { getJsonData as default };
