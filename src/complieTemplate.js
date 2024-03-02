@@ -13,7 +13,7 @@ export const compileTemplate = async function (templateName, dataDyanamic) {
 
   const langType = "en";
   const staticContentData = await getJsonData(
-    "src/template/data",
+    "src/template/locales",
     `${templateName}.${langType}`
   );
   // console.log("compileTemplate", "staticContentData", staticContentData);
