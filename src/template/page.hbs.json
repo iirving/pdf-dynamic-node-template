@@ -1,6 +1,6 @@
 {
   "public": {
-    "companylogo": "public/logo.png"
+    "companylogo": "../../public/logo.png"
   },
   "headerLabel": "Toronto Tennis Team",
   "subHeader": {
@@ -10,27 +10,27 @@
     "roleLabel": "role"
   },
   "name": "Obi-Wan",
-  "address": "",
-  "payling_role": "",
+  "address": "address",
+  "payling_role": "role",
   "summary": {
-    "header": "",
+    "header": "Summary",
     "table": {
       "header": {
-        "format": "",
-        "match": "",
-        "runs": "",
-        "hs": "",
-        "average": 10
+        "format": "Format",
+        "match": "Match",
+        "runs": "Runs",
+        "hs": "HS",
+        "average": "AVG"
       }
     }
   },
   "list": [
     {
-      "format": "",
-      "match": "",
-      "runs": "",
-      "hs": "",
-      "avs": ""
+      "format": "Format",
+      "match": "15",
+      "runs": 10,
+      "hs": "HS",
+      "avs": 10
     }
   ]
 }
