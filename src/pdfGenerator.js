@@ -12,9 +12,10 @@ export const pdfGenerator = async function (fileName, data) {
   await page.setContent(content);
   await page.emulateMediaType("screen");
 
+  const outputFolderName = "output";
   const outPutPath = path.join(
     process.cwd(),
-    "output",
+    outputFolderName,
     `${fileName}-${Date.now()}.pdf`
   );
 
@@ -28,6 +29,7 @@ export const pdfGenerator = async function (fileName, data) {
   let buffer = await page.pdf(pdfOptions);
 
   await browser.close();
+  return buffer;
 };
 
 export { pdfGenerator as default };

@@ -8,5 +8,6 @@ export const generatePdf = async (outputFileName, dynamicDatafileName) => {
   const data = await getJsonData("data", dynamicDatafileName);
 
   let buffer = await pdfGenerator(outputFileName, data);
+  return buffer;
 };
 export { generatePdf as default };
