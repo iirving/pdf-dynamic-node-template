@@ -18,12 +18,14 @@ export const pdfGenerator = async function (fileName, data) {
     `${fileName}-${Date.now()}.pdf`
   );
 
-  let buffer = await page.pdf({
+  const pdfOptions = {
     path: outPutPath,
     format: "A4",
     margin: { top: 20 },
     printBackground: true,
-  });
+  };
+
+  let buffer = await page.pdf(pdfOptions);
 
   await browser.close();
 };
