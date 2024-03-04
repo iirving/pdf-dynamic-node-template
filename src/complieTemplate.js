@@ -18,8 +18,8 @@ export const compileTemplate = async function (templateName, dataDyanamic) {
   );
   // console.log("compileTemplate", "staticContentData", staticContentData);
 
-  const publicPath = path.join(process.cwd(), "public");
-  let staticCompanylogoPath = path.join(publicPath, "logo.png");
+  // const publicPath = path.join(process.cwd(), "public");
+  // let staticCompanylogoPath = path.join(publicPath, "logo.png");
   staticCompanylogoPath = base64img.base64Sync("./public/images/logo.png");
 
   const staticPublicData = {
