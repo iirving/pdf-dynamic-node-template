@@ -7,11 +7,14 @@ export const pdfGenerator = async function (fileName, data) {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
+  // Compile the hbs template with the data
   const content = await compileTemplate("page", data);
 
+  // Set the page content with the compiled template
   await page.setContent(content);
   await page.emulateMediaType("screen");
 
+  // Set the pdf output options
   const outputFolderName = "output";
   const outPutPath = path.join(
     process.cwd(),
@@ -19,6 +22,7 @@ export const pdfGenerator = async function (fileName, data) {
     `${fileName}-${Date.now()}.pdf`
   );
 
+  // set the pdf options
   const pdfOptions = {
     path: outPutPath,
     format: "A4",
@@ -26,8 +30,10 @@ export const pdfGenerator = async function (fileName, data) {
     printBackground: true,
   };
 
+  // Generate the pdf
   let buffer = await page.pdf(pdfOptions);
 
+  // Close the puppeteer browser
   await browser.close();
   return buffer;
 };
